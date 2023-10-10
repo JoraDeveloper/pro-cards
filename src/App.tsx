@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Main, CreateCardContainer } from "./components";
+import "./style/normalize.css";
 
 const mainPath = "/";
 const createCardPath = "/create";
