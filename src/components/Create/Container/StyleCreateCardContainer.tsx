@@ -3,6 +3,7 @@ import { Box, Typography, styled } from "@mui/material";
 export const Container = styled(Box)({
   display: "flex",
   flexDirection: "column",
+  justifyContent: "space-between",
   backgroundColor: "rgb(39, 38, 59)",
   height: "100%",
 });
@@ -16,6 +17,7 @@ export const Title = styled(Typography)({
 
 export const EditorContainer = styled(Box)({
   flexGrow: 1,
+  maxHeight: "70%",
   display: "grid",
   gridTemplateColumns: "1fr 1fr",
   gap: "0px 20px",

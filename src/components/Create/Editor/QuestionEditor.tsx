@@ -1,6 +1,12 @@
 import { useEffect, useRef } from "react";
 import EditorJS from "@editorjs/editorjs";
-import { Container } from "./StyleEditor";
+import { Divider } from "@mui/material";
+import {
+  Container,
+  EditorContainer,
+  EditorTitle,
+  EditorHolder,
+} from "./StyleEditor";
 
 function QuestionEditor() {
   const holderRef = useRef<HTMLDivElement>(null);
@@ -11,7 +17,15 @@ function QuestionEditor() {
     }
   }, []);
 
-  return <Container ref={holderRef} />;
+  return (
+    <Container>
+      <EditorContainer>
+        <EditorTitle>Создание вопроса</EditorTitle>
+        <Divider />
+        <EditorHolder ref={holderRef} />
+      </EditorContainer>
+    </Container>
+  );
 }
 
 export default QuestionEditor;
