@@ -4,12 +4,15 @@ import {
   EditorContainer,
   Footer,
 } from "./StyleCreateCardContainer";
+import QuestionEditor from "../Editor/QuestionEditor";
 
 function CreateCardContainer() {
   return (
     <Container>
       <Title>Создание карточки</Title>
-      <EditorContainer />
+      <EditorContainer>
+        <QuestionEditor />
+      </EditorContainer>
       <Footer>&copy; Жорик</Footer>
     </Container>
   );

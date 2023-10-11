@@ -16,6 +16,9 @@ export const Title = styled(Typography)({
 
 export const EditorContainer = styled(Box)({
   flexGrow: 1,
+  display: "grid",
+  gridTemplateColumns: "1fr 1fr",
+  gap: "0px 20px",
 });
 
 export const Footer = styled(Box)({
