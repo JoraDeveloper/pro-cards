@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import EditorJS from "@editorjs/editorjs";
 import { Divider } from "@mui/material";
+import { createConfig } from "../../../editor";
 import {
   Container,
   EditorContainer,
@@ -13,7 +14,7 @@ function QuestionEditor() {
 
   useEffect(() => {
     if (holderRef.current) {
-      new EditorJS({ holder: holderRef.current });
+      new EditorJS(createConfig(holderRef.current));
     }
   }, []);
 
