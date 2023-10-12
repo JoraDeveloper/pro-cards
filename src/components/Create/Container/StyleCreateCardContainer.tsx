@@ -20,7 +20,8 @@ export const EditorContainer = styled(Box)({
   maxHeight: "70%",
   display: "grid",
   gridTemplateColumns: "1fr 1fr",
-  gap: "0px 20px",
+  gap: "0px 80px",
+  padding: "0px 40px",
 });
 
 export const Footer = styled(Box)({
