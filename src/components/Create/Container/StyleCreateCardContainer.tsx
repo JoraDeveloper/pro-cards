@@ -24,6 +24,14 @@ export const EditorContainer = styled(Box)({
   padding: "0px 40px",
 });
 
+export const Actions = styled(Box)({
+  display: "flex",
+  justifyContent: "flex-end",
+  padding: "0px 40px",
+  marginTop: "30px",
+  gap: "20px",
+});
+
 export const Footer = styled(Box)({
   padding: "30px 0",
   textAlign: "center",
