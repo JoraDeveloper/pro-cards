@@ -1,4 +1,9 @@
 @import url("./normalize.css");
+@import url("./fonts.css");
+
+html {
+  font-family: "Noto Sans";
+}
 
 html,
 body,
